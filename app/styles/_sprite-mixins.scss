@@ -1,0 +1,23 @@
+.icon {
+  display: inline-block;
+}
+
+.icon-google {
+  @include sprite($google);
+}
+
+.icon-vk {
+  @include sprite($vk);
+}
+
+.icon-tw {
+  @include sprite($tw);
+}
+
+.icon-ok {
+  @include sprite($ok);
+}
+
+.icon-up {
+  @include sprite($up);
+}

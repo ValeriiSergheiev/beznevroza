@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="психолог">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeznevrozaNet</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Header -->
+      <header>
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top-bg">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="logo">
+                    <a href="#"><img src="images/logo.jpg" alt="logo" class="img-responsive"></a>
+                  </div>
+                </div>
+
+                <div class="col-md-9">
+                  <nav class="navbar navbar-right header-menu">
+                    <ul class="nav navbar-nav main-menu">
+                      <!-- <li><a href="#"><span class="icon-add-user"></span>Вход на сайт</a></li> -->
+                      <li class="menu-active"><a href="#"><span class="icon-home"></span>Главная</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://uwebmaster.xyz/"><span class="icon-psychotherapy_2"></span>Психотерапия</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Психотерапевтические аудиосеансы</a></li>
+                          <li><a href="#">Консультации</a></li>
+                          <li><a href="#">Сеансы терапии</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-question"></span>Вопросы психотерапевту</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Выпуски передачи</a></li>
+                          <li><a href="#">Написать письмо в передачу</a></li>
+                          <li><a href="#">Отзывы и предложения</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-exclamation"></span>Полезно знать</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Статьи</a></li>
+                          <li><a href="#">Полезные советы и рекомендации</a></li>
+                          <li><a href="#">Полезные заметки</a></li>
+                          <li><a href="#">Техники и упражнения</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-psychotherapy"></span>Неврозы XXI века</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Выпуски проекта</a></li>
+                          <li><a href="#">Предлагаем тематику вебинара</a></li>
+                          <li><a href="#">Голосуем за тему вебинара</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><span class="icon-cogwheel"></span>Услуги</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-add-user"></span>Войти/Регистрация</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Профиль</a></li>
+                          <li><a href="#">Выйти</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="col-sm-1 col-xs-2 col-sm-offset-4 col-xs-offset-2 hidden-md hidden-lg">
+                  <div class="mob-search pull-right">
+                    <span class="icon-search"></span>
+                  </div>
+                </div>
+
+                <div class="col-sm-1 col-xs-2 hidden-md hidden-lg">
+                  <div class="mob-btn pull-right">
+                    <span class="icon-menu mob-btn-active"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-1">
+                <div class="header-services">
+                  <a href="#">Услуги<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-md-offset-2">
+                <div class="header-seek">
+                  <input type="text" placeholder="Поиск...">
+                  <span class="icon-search"></span>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-lg-offset-1 col-md-3">
+                <div class="header-cart">
+                  <span class="icon-basket"></span>
+                  <span>Товаров: <em>10 шт.</em></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main page top section -->
+      <section class="main-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 hidden-sm hidden-xs">
+              <div class="main-top-left">
+                <form id="form-login">
+                  <h6>вход</h6>
+                  <input type="text" placeholder="Логин" required>
+                  <input type="password" placeholder="Пароль" required>
+                  <button class="btn-green">Войти</button>
+                  <div class="pass-reg">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#registration-popup" class="open-registration-popup">Регистрация</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Slider -->
+
+            <div class="col-md-9 col-sm-12 col-xs-12">
+              <div class="main-top-right">
+                <div class="slider-title">
+                  <h4>Новые новости на сайте</h4>
+                  <h4>Вам будет интересно:</h4>
+                </div>
+                <div class="main-top-slider">
+
+                  <div class="main-sider-item">
+
+                    <div class="main-sider-item-img">
+                      <img src="images/main_slide_1.jpg" alt="image" class="img-responsive">
+                    </div>
+
+                    <div class="main-sider-item-content">
+                      <a href="#"><h6>Терпение приводит к мечте</h6></a>
+                      <p>Для того чтобы постоянно совершенствоваться и улучшать качество своей жизни, необходимо обладать...</p>
+                      <a href="#" class="read-more slider-read-more">Читать далее</a>
+                      <div class="viewed">
+                        <i class="icon-eye"></i>
+                        <span>Просмотров: <span>10 000</span></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="main-sider-item">
+
+                    <div class="main-sider-item-img">
+                      <img src="images/main_slide_2.jpg" alt="image" class="img-responsive">
+                    </div>
+
+                    <div class="main-sider-item-content">
+                      <a href="#"><h6>Терпение приводит к мечте</h6></a>
+                      <p>Для того чтобы постоянно совершенствоваться и улучшать качество своей жизни, необходимо обладать...</p>
+                      <a href="#" class="read-more slider-read-more">Читать далее</a>
+                      <div class="viewed">
+                        <i class="icon-eye"></i>
+                        <span>Просмотров: <span>10 000</span></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="main-sider-item">
+
+                    <div class="main-sider-item-img">
+                      <img src="images/main_slide_3.jpg" alt="image" class="img-responsive">
+                    </div>
+
+                    <div class="main-sider-item-content">
+                      <a href="#"><h6>Терпение приводит к мечте</h6></a>
+                      <p>Для того чтобы постоянно совершенствоваться и улучшать качество своей жизни, необходимо обладать...</p>
+                      <a href="#" class="read-more slider-read-more">Читать далее</a>
+                      <div class="viewed">
+                        <i class="icon-eye"></i>
+                        <span>Просмотров: <span>10 000</span></span>
+                      </div>
+                    </div>
+
+                  </div><div class="main-sider-item">
+
+                  <div class="main-sider-item-img">
+                    <img src="images/main_slide_4.jpg" alt="image" class="img-responsive">
+                  </div>
+
+                  <div class="main-sider-item-content">
+                    <a href="#"><h6>Терпение приводит к мечте</h6></a>
+                    <p>Для того чтобы постоянно совершенствоваться и улучшать качество своей жизни, необходимо обладать...</p>
+                    <a href="#" class="read-more slider-read-more">Читать далее</a>
+                    <div class="viewed">
+                      <i class="icon-eye"></i>
+                      <span>Просмотров: <span>10 000</span></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="main-sider-item">
+
+                  <div class="main-sider-item-img">
+                    <img src="images/main_slide_5.jpg" alt="image" class="img-responsive">
+                  </div>
+
+                  <div class="main-sider-item-content">
+                    <a href="#"><h6>Терпение приводит к мечте</h6></a>
+                    <p>Для того чтобы постоянно совершенствоваться и улучшать качество своей жизни, необходимо обладать...</p>
+                    <a href="#" class="read-more slider-read-more">Читать далее</a>
+                    <div class="viewed">
+                      <i class="icon-eye"></i>
+                      <span>Просмотров: <span>10 000</span></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="main-sider-item">
+
+                  <div class="main-sider-item-img">
+                    <img src="images/main_slide_6.jpg" alt="image" class="img-responsive">
+                  </div>
+
+                  <div class="main-sider-item-content">
+                    <a href="#"><h6>Терпение приводит к мечте</h6></a>
+                    <p>Для того чтобы постоянно совершенствоваться и улучшать качество своей жизни, необходимо обладать...</p>
+                    <a href="#" class="read-more slider-read-more">Читать далее</a>
+                    <div class="viewed">
+                      <i class="icon-eye"></i>
+                      <span>Просмотров: <span>10 000</span></span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-content">
+      <!-- <div class="full-width-container"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 hidden-sm hidden-xs">
+            <aside class="left-sidebar">
+              <div class="banner">
+                <a href="#"><img src="images/banner_ask.jpg" alt="banner" class="img-responsive"></a>
+              </div>
+              <div class="banner">
+                <a href="#"><img src="images/banner_ask.jpg" alt="banner" class="img-responsive"></a>
+              </div>
+              <div class="banner">
+                <a href="#"><img src="images/banner_ask.jpg" alt="banner" class="img-responsive"></a>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="page-content">
+              <div class="section-title">
+                <h4>Новости на сайте:</h4>
+              </div>
+
+              <div class="news-content">
+
+                <div class="news-item">
+                  <div class="news-item-logo"><img src="images/news_logo.png" alt="news-logo"></div>    
+                  <h4>если денег на психолога нет...</h4>
+                  <article>Когда Вы пишете, что нет денег на платного психолога - Вы пытаетесь легко избавиться от необходимости работать над собою. К психологу идти - это часто очень страшно, потому что неизвестно. И Вы скорее всего не очень понимаете даже, про свой страх перед психологической работой. "Сходил бы с удовольствием" - этой фразе я не верю. Честнее было бы сказать "я в ужасе, что придётся идти к психологу".</article>
+                  <a href="#">Показать полностью...</a>
+                  <img src="images/news_photo_1.jpg" alt="photo news" class="img-responsive">
+                  <div class="news-statistic clearfix">
+                    <div class="news-statistic-left pull-left">
+                      <span>01 января 2016 года</span>
+                    </div>
+                    <div class="news-statistic-right pull-right">
+                      <div class="news-like">
+                        <span class="icon-like"></span>
+                        <span>1 000</span>
+                      </div>
+                      <div class="news-msg">
+                        <span class="icon-speak"></span>
+                        <span>1 000</span>
+                      </div>
+                      <div class="news-views">
+                        <span class="icon-eye"></span>
+                        <span>1 000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-item">
+                  <div class="news-item-logo"><img src="images/news_logo.png" alt="news-logo"></div>    
+                  <h4>Из невротиков в психологи (сказка)</h4>
+                  <article>Когда Вы пишете, что нет денег на платного психолога - Вы пытаетесь легко избавиться от необходимости работать над собою. К психологу идти - это часто очень страшно, потому что неизвестно. И Вы скорее всего не очень понимаете даже, про свой страх перед психологической работой. "Сходил бы с удовольствием" - этой фразе я не верю. Честнее было бы сказать "я в ужасе, что придётся идти к психологу".</article>
+                  <a href="#">Показать полностью...</a>
+                  <img src="images/news_photo_2.jpg" alt="photo news" class="img-responsive">
+                  <div class="news-statistic clearfix">
+                    <div class="news-statistic-left pull-left">
+                      <span>01 января 2016 года</span>
+                    </div>
+                    <div class="news-statistic-right pull-right">
+                      <div class="news-like">
+                        <span class="icon-like"></span>
+                        <span>1 000</span>
+                      </div>
+                      <div class="news-msg">
+                        <span class="icon-speak"></span>
+                        <span>1 000</span>
+                      </div>
+                      <div class="news-views">
+                        <span class="icon-eye"></span>
+                        <span>1 000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item-more center-block">
+                <ul>
+                  <li><a href="#" class="active-green"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <a href="#">ещё</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 hidden-sm hidden-xs">
+            <aside class="right-sidebar">
+
+              <div class="right-sidebar-news-item">
+                <img src="images/main_slide_3.jpg" alt="img" class="img-responsive">
+                <div class="right-sidebar-news-item-text">
+                  <h6>Медитация для тела</h6>
+                  <article>Эта статья расскажет о том как правильно медитировать.</article>
+                  <a href="#">Читать далее</a>
+                </div>
+              </div>
+
+              <div class="right-sidebar-news-item">
+                <img src="images/main_slide_4.jpg" alt="img" class="img-responsive">
+                <div class="right-sidebar-news-item-text">
+                  <h6>Медитация для тела</h6>
+                  <article>Эта статья расскажет о том как правильно медитировать.</article>
+                  <a href="#">Читать далее</a>
+                </div>
+              </div>
+
+              <div class="right-sidebar-news-item">
+                <img src="images/main_slide_5.jpg" alt="img" class="img-responsive">
+                <div class="right-sidebar-news-item-text">
+                  <h6>Медитация для тела</h6>
+                  <article>Эта статья расскажет о том как правильно медитировать.</article>
+                  <a href="#">Читать далее</a>
+                </div>
+              </div>
+
+              <div class="right-sidebar-news-item">
+                <img src="images/main_slide_6.jpg" alt="img" class="img-responsive">
+                <div class="right-sidebar-news-item-text">
+                  <h6>Медитация для тела</h6>
+                  <article>Эта статья расскажет о том как правильно медитировать.</article>
+                  <a href="#">Читать далее</a>
+                </div>
+              </div>
+
+            </aside>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- Footers -->
+
+    <footer class="top-footer hidden-sm hidden-xs">
+      <div class="container">
+       <div class="top-footer-container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="top-footer-item">
+              <h6>Услуги</h6>
+              <ul>
+                <li><a href="#">Индивидуальная консультация</a></li>
+                <li><a href="#">Групповая консультация</a></li>
+                <li><a href="#">Терапевтические Аудио сеансы</a></li>
+                <li><a href="#">Терапевтические видео курсы</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="top-footer-item">
+              <h6>Вопросы к психотерапевту</h6>
+              <ul>
+                <li><a href="#">Выпуски передачи</a></li>
+                <li><a href="#">Написать письмо в передачу</a></li>
+                <li><a href="#">Отзывы и предложения</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="top-footer-item">
+              <h6>Полезно знать</h6>
+              <ul>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Полезные советы</a></li>
+                <li><a href="#">Полезные заметки</a></li>
+                <li><a href="#">Техники и упражнения</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="top-footer-item">
+              <h6>Неврозы 21 века</h6>
+              <ul>
+                <li><a href="#">Выпуски проекта</a></li>
+                <li><a href="#">Предлагаем тематику вебинара</a></li>
+                <li><a href="#">Голосуем за тему вебинара</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer"></div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="bottom-footer">
+    <div class="container">
+      <div class="bg-container clearfix">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="bottom-footer-left">
+              <a href="#"><img src="images/logo.jpg" alt="logo"></a>
+              <p>&#169; BeznervozaNet | Все права защищены</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xs-12">
+            <div class="bottom-footer-right">
+              <div class="footer-socials">
+                <a href="#"><i class="icon icon-google"></i></a>
+                <a href="https://vk.com/bez_nevroza_net" target="_blank"><i class="icon icon-vk"></i></a>
+                <a href="#"><i class="icon icon-tw"></i></a>
+                <a href="#"><i class="icon icon-ok"></i></a>
+              </div>
+              <p>Мы в социальных сетях</p>
+            </div>
+          </div>
+          <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+            <div class="copyright">
+              <p>&#169; BeznervozaNet | Все права защищены</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <div class="scroll-top">
+    <i class="icon icon-up"></i>
+  </div>
+
+  <!-- Popup Registration -->
+  <div id="registration-popup" class="registration-popup mfp-hide">  <!--mfp-hide-->
+    <form id="registration-form" class="registration-form">
+      <h3>Регистрация</h3>
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="text" placeholder="Ваша фамилия">
+      <h5>Дата рождения</h5>
+      <h5>Телефон</h5>
+      <input type="tel" placeholder="+7">
+      <button>Получить код</button>
+      <input type="text" placeholder="Ведите код активации" required>
+      <input type="password">
+      <button>Зарегистрироваться</button>
+    </form>
+  </div>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+  <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script> -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script> -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script> -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script> -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

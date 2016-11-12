@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&subset=cyrillic');
+
+//Icon svg
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?61j6cp');
+	src:  url('../fonts/icomoon.eot?61j6cp#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?61j6cp') format('truetype'),
+	url('../fonts/icomoon.woff?61j6cp') format('woff'),
+	url('../fonts/icomoon.svg?61j6cp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lk:before {
+	content: "\e900";
+}
+.icon-my_answer:before {
+	content: "\e901";
+}
+.icon-my_friends:before {
+	content: "\e902";
+}
+.icon-my_message:before {
+	content: "\e903";
+}
+.icon-my_music:before {
+	content: "\e904";
+}
+.icon-my_news:before {
+	content: "\e905";
+}
+.icon-my_notes:before {
+	content: "\e906";
+}
+.icon-my_photos:before {
+	content: "\e907";
+}
+.icon-my_video:before {
+	content: "\e908";
+}
+.icon-add-user:before {
+	content: "\e909";
+}
+.icon-arrow:before {
+	content: "\e90a";
+}
+.icon-basket:before {
+	content: "\e90b";
+}
+.icon-cogwheel:before {
+	content: "\e90c";
+}
+.icon-exclamation:before {
+	content: "\e90d";
+}
+.icon-exit:before {
+	content: "\e90e";
+}
+.icon-eye:before {
+	content: "\e90f";
+}
+.icon-home:before {
+	content: "\e910";
+}
+.icon-like:before {
+	content: "\e911";
+}
+.icon-menu:before {
+	content: "\e912";
+}
+.icon-pencil:before {
+	content: "\e913";
+}
+.icon-psychotherapy:before {
+	content: "\e914";
+}
+.icon-psychotherapy_2:before {
+	content: "\e915";
+}
+.icon-question:before {
+	content: "\e916";
+}
+.icon-search:before {
+	content: "\e917";
+}
+.icon-speak:before {
+	content: "\e918";
+}
+.icon-user:before {
+	content: "\e919";
+}
