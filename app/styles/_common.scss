@@ -74,5 +74,12 @@ a.read-more {
 	opacity: 0;
 }
 
+.btn-disable {
+	background-color: #B8B8B8 !important;
+	pointer-events: none;
+}
 
-
+@keyframes profile {
+    from  {width: 65px;}
+    to {width: 245px;}
+}

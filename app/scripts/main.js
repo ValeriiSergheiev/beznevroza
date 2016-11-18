@@ -21,8 +21,8 @@ $(document).ready(function() {
 
 	if ($(window).width() < 992) {
 		$('.main-menu > li:last-child').prependTo('.main-menu');
-		$('.main-menu > li:first-child > a').text('Вход на сайт');
-		$('<span class="icon-add-user"></span>').prependTo('.main-menu > li:first-child a');
+		//$('.main-menu > li:first-child > a').text('Вход на сайт');
+		//$('<span class="icon-add-user"></span>').prependTo('.main-menu > li:first-child a');
 		$('.dropdown-toggle').attr('data-toggle', '');
 		x++;
 	};
@@ -38,7 +38,7 @@ $(document).ready(function() {
 			x = 0;
 			if (y > 1) {return} else {
 				$('.main-menu > li:first-child').appendTo('.main-menu');
-				$('.main-menu > li:last-child > a').text('Войти/Регистрация');
+				//$('.main-menu > li:last-child > a').text('Войти/Регистрация');
 				$('.dropdown-toggle').attr('data-toggle', 'dropdown');
 				//$('<span class="icon-add-user"></span>').prependTo('.main-menu > li:last-child a');
 			};
@@ -51,8 +51,8 @@ $(document).ready(function() {
 			y = 0;
 			if (x > 1) {return} else {
 				$('.main-menu > li:last-child').prependTo('.main-menu');
-				$('.main-menu > li:first-child > a').text('Вход на сайт');
-				$('<span class="icon-add-user"></span>').prependTo('.main-menu > li:first-child a');
+				//$('.main-menu > li:first-child > a').text('Вход на сайт');
+				//$('<span class="icon-add-user"></span>').prependTo('.main-menu > li:first-child a');
 				$('.dropdown-toggle').attr('data-toggle', '');
 				//alert(x);
 			}
@@ -111,5 +111,27 @@ $(document).ready(function() {
 		mainClass: 'mfp-fade'
 	});
 
+	$('.profile-sidenav li > a').click(function() {
+		$('.profile-sidenav li a').removeClass('profile-sidenav-active');
+		$(this).addClass('profile-sidenav-active');
+	});
+
+	//Affix
+	$('.profile-sidebar').affix({
+		offset: {
+			top: $('header').height(),
+			bottom: $('footer.bottom-footer').height() + $('footer.top-footer').height() + 100
+		}
+	});
+
+	/*$(window).resize(function() {
+		console.log($('header').height());
+		$('.profile-sidebar').affix({
+			offset: {
+				top: $('header').height(),
+				bottom: $('footer.bottom-footer').height() + $('footer.top-footer').height() + 100
+			}
+		});
+	});*/
 
 });	

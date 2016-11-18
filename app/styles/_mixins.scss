@@ -1,0 +1,10 @@
+@mixin btn-behavior($bg-color) {
+	background-color: $bg-color;
+	&:hover {
+		box-shadow: 0 0 3px darken(#B8B8B8, 30%);
+	}
+	&:active {
+		background-color: darken($bg-color, 10%);
+		box-shadow: none;
+	}
+}
