@@ -132,8 +132,8 @@
         </div>
       </header>
 
-      <!-- Cabinet main -->
-      <section class="cabinet">
+      <!-- My audio -->
+      <section class="my-audio">
         <div class="container">
           <div class="row">
             <div class="col-md-2 col-sm-2 col-xs-3">
@@ -158,13 +158,9 @@
               </div>
             </div>
 
-            <div class="col-md-10 col-sm-10 col-xs-9">
+            <div class="col-md-8 col-sm-10 col-xs-9">
               <!-- Slider -->
               <div class="main-top-right">
-                <div class="user-online">
-                  <h5>Роман Викторович <sup>сейчас на сайте</sup></h5>
-                </div>
-
                 <div class="slider-title">
                   <h4>Новые новости на сайте:</h4>
                   <h4>Вам будет интересно:</h4>
@@ -238,407 +234,236 @@
                 </div>
               </div>
               <!-- Main content -->
-              <div class="profile-tabs">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Абонемент</a></li>
-                  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Запланированные <span>абонементы</span></a></li>
+              <h1>audio</h1>
+              <!-- Audio player -->
+              <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+              <div id="jp_container_1" class="jp-audio">
+
+                <div class="jp-type-playlist">
+                  <div class="jp-gui jp-interface">
+                    <ul class="jp-controls">
+                      <li>
+                        <label id="name-of-the-song-that-plays"></label>
+                      </li>
+                      <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                      <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                      <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                      <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                      <div class="clear"></div>
+                    </ul>
+                    <!-- Прогресс бар -->
+                    <div class="jp-progress">
+                      <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                      </div>
+                    </div>
+                    <!-- Регулятор громкости -->
+                    <div class="jp-volume-bar">
+                      <div class="jp-volume-bar-value"></div>
+                    </div>
+                    <!-- Остаток времени -->
+                    <div class="jp-time-holder">
+                      <div class="jp-current-time"></div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <!-- Кнопки повторения и перемешивания плейлиста -->
+                    <ul class="jp-toggles">
+                      <li>
+                        <a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a>
+                      </li>
+                    </ul>
+                    <div class="clear"></div>
+                  </div>
+                  <!-- Будущий плейлист -->
+                  <div class="jp-playlist">
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <!-- Сообщение об ошибке -->
+                  <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your 
+                    <a href="http://get.adobe.com/flashplayer/" target="_blank">
+                      Flash plugin
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end Audio player -->
+
+            </div>
+
+            <div class="col-md-2 hidden-sm hidden-xs">
+              <h1>right sidebar</h1>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Footers -->
+
+      <footer class="top-footer hidden-sm hidden-xs">
+        <div class="container">
+         <div class="top-footer-container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="top-footer-item">
+                <h6>Услуги</h6>
+                <ul>
+                  <li><a href="#">Индивидуальная консультация</a></li>
+                  <li><a href="#">Групповая консультация</a></li>
+                  <li><a href="#">Терапевтические Аудио сеансы</a></li>
+                  <li><a href="#">Терапевтические видео курсы</a></li>
                 </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="home">
-                    <div class="profile-audio-session-item">
-                      <div class="row">
-                        <div class="col-xs-3">
-                          <div class="profile-audio-session-img" data-list-count="1">
-                            <img src="images/audio_session_1.png" alt="img" class="img-responsive">
-                          </div>
-                        </div>
-
-                        <div class="col-xs-9">
-                          <div class="row">
-                            <div class="col-xs-12 col-lg-4">
-                             <div class="audio-session-title">
-                              <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-                            </div>
-                          </div>
-
-                          <div class="col-xs-12 col-lg-4">
-                           <div class="audio-session-date">
-                            <span>17 августа 2016г</span>
-                            <span>15.00-18.00</span>
-                          </div>
-                        </div>
-
-                        <div class="col-xs-12 col-lg-4">
-                          <div class="audio-session-submit">
-                            <a href="#" class="">Продлить абонемент</a>
-                            <a href="#" class="">Отменить абонемент</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="profile-audio-session-item">
-                  <div class="row">
-                    <div class="col-xs-3">
-                      <div class="profile-audio-session-img" data-list-count="2">
-                        <img src="images/audio_session_2.png" alt="img" class="img-responsive">
-                      </div>
-                    </div>
-
-                    <div class="col-xs-9">
-                      <div class="row">
-                        <div class="col-xs-12 col-lg-4">
-                         <div class="audio-session-title">
-                          <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-                        </div>
-                      </div>
-
-                      <div class="col-xs-12 col-lg-4">
-                       <div class="audio-session-date">
-                        <span>17 августа 2016г</span>
-                        <span>15.00-18.00</span>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-lg-4">
-                      <div class="audio-session-submit">
-                        <a href="#" class="">Продлить абонемент</a>
-                        <a href="#" class="">Отменить абонемент</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
-            <div class="profile-audio-session-item">
-              <div class="row">
-                <div class="col-xs-3">
-                  <div class="profile-audio-session-img" data-list-count="3">
-                    <img src="images/audio_session_3.png" alt="img" class="img-responsive">
-                  </div>
-                </div>
+            <div class="col-md-3">
+              <div class="top-footer-item">
+                <h6>Вопросы к психотерапевту</h6>
+                <ul>
+                  <li><a href="#">Выпуски передачи</a></li>
+                  <li><a href="#">Написать письмо в передачу</a></li>
+                  <li><a href="#">Отзывы и предложения</a></li>
+                </ul>
+              </div>
+            </div>
 
-                <div class="col-xs-9">
-                  <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                     <div class="audio-session-title">
-                      <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-                    </div>
-                  </div>
+            <div class="col-md-3">
+              <div class="top-footer-item">
+                <h6>Полезно знать</h6>
+                <ul>
+                  <li><a href="#">Статьи</a></li>
+                  <li><a href="#">Полезные советы</a></li>
+                  <li><a href="#">Полезные заметки</a></li>
+                  <li><a href="#">Техники и упражнения</a></li>
+                </ul>
+              </div>
+            </div>
 
-                  <div class="col-xs-12 col-lg-4">
-                   <div class="audio-session-date">
-                    <span>17 августа 2016г</span>
-                    <span>15.00-18.00</span>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-lg-4">
-                  <div class="audio-session-submit">
-                    <a href="#" class="">Продлить абонемент</a>
-                    <a href="#" class="">Отменить абонемент</a>
-                  </div>
-                </div>
+            <div class="col-md-3">
+              <div class="top-footer-item">
+                <h6>Неврозы 21 века</h6>
+                <ul>
+                  <li><a href="#">Выпуски проекта</a></li>
+                  <li><a href="#">Предлагаем тематику вебинара</a></li>
+                  <li><a href="#">Голосуем за тему вебинара</a></li>
+                </ul>
               </div>
             </div>
           </div>
+
+          <div class="bottom-footer"></div>
         </div>
       </div>
+    </footer>
 
-      <div role="tabpanel" class="tab-pane fade" id="settings">
-        <div class="profile-audio-session-item">
+    <footer class="bottom-footer">
+      <div class="container">
+        <div class="bg-container clearfix">
           <div class="row">
-            <div class="col-xs-3">
-              <div class="profile-audio-session-img" data-list-count="4">
-                <img src="images/audio_session_3.png" alt="img" class="img-responsive">
+            <div class="col-sm-6 col-xs-12">
+              <div class="bottom-footer-left">
+                <a href="#"><img src="images/logo.jpg" alt="logo"></a>
+                <p>&#169; BeznervozaNet | Все права защищены</p>
               </div>
             </div>
 
-            <div class="col-xs-9">
-              <div class="row">
-                <div class="col-xs-12 col-lg-4">
-                 <div class="audio-session-title">
-                  <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
+            <div class="col-sm-6 col-xs-12">
+              <div class="bottom-footer-right">
+                <div class="footer-socials">
+                  <a href="#"><i class="icon icon-google"></i></a>
+                  <a href="https://vk.com/bez_nevroza_net" target="_blank"><i class="icon icon-vk"></i></a>
+                  <a href="#"><i class="icon icon-tw"></i></a>
+                  <a href="#"><i class="icon icon-ok"></i></a>
                 </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-               <div class="audio-session-date">
-                <span>17 августа 2016г</span>
-                <span>15.00-18.00</span>
+                <p>Мы в социальных сетях</p>
               </div>
             </div>
-
-            <div class="col-xs-12 col-lg-4">
-              <div class="audio-session-submit">
-                <a href="#" class="">Продлить абонемент</a>
-                <a href="#" class="">Отменить абонемент</a>
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+              <div class="copyright">
+                <p>&#169; BeznervozaNet | Все права защищены</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <div class="scroll-top">
+      <i class="icon icon-up"></i>
     </div>
 
-    <div class="profile-audio-session-item">
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="profile-audio-session-img" data-list-count="5">
-            <img src="images/audio_session_1.png" alt="img" class="img-responsive">
-          </div>
-        </div>
-
-        <div class="col-xs-9">
-          <div class="row">
-            <div class="col-xs-12 col-lg-4">
-             <div class="audio-session-title">
-              <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-lg-4">
-           <div class="audio-session-date">
-            <span>17 августа 2016г</span>
-            <span>15.00-18.00</span>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-lg-4">
-          <div class="audio-session-submit">
-            <a href="#" class="">Продлить абонемент</a>
-            <a href="#" class="">Отменить абонемент</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="profile-audio-session-item">
-  <div class="row">
-    <div class="col-xs-3">
-      <div class="profile-audio-session-img" data-list-count="6">
-        <img src="images/audio_session_2.png" alt="img" class="img-responsive">
-      </div>
+    <!-- Popup Registration -->
+    <div id="registration-popup" class="registration-popup mfp-hide">  <!--mfp-hide-->
+      <form id="registration-form" class="registration-form">
+        <h3>Регистрация</h3>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="text" placeholder="Ваша фамилия">
+        <h5>Дата рождения</h5>
+        <h5>Телефон</h5>
+        <input type="tel" placeholder="+7">
+        <button>Получить код</button>
+        <input type="text" placeholder="Ведите код активации" required>
+        <input type="password">
+        <button>Зарегистрироваться</button>
+      </form>
     </div>
 
-    <div class="col-xs-9">
-      <div class="row">
-        <div class="col-xs-12 col-lg-4">
-         <div class="audio-session-title">
-          <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-        </div>
-      </div>
 
-      <div class="col-xs-12 col-lg-4">
-       <div class="audio-session-date">
-        <span>17 августа 2016г</span>
-        <span>15.00-18.00</span>
-      </div>
-    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
 
-    <div class="col-xs-12 col-lg-4">
-      <div class="audio-session-submit">
-        <a href="#" class="">Продлить абонемент</a>
-        <a href="#" class="">Отменить абонемент</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="/bower_components/jPlayer/dist/jplayer/jquery.jplayer.js"></script>
+    <script src="/bower_components/jPlayer/dist/add-on/jplayer.playlist.custom.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-</div>
-<!-- Profile reccomend -->
-<div class="profile-recommend">
-  <div class="profile-section-title">
-    <h4>Рекомендуем:</h4>
-  </div>
-  <div class="row">
-    <div class="col-md-4 col-sm-12">
-      <div class="profile-recommend-item">
-        <img src="images/audio_session_1.png" alt="img" class="img-responsive center-block">
-        <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-        <a href="#">Подробнее <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
-      </div>
-    </div>
+    <!-- <script src="/bower_components/jPlayer/dist/add-on/jplayer.playlist.custom.js"></script> -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script> -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script> -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script> -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
 
-    <div class="col-md-4 col-sm-12">
-      <div class="profile-recommend-item">
-        <img src="images/audio_session_2.png" alt="img" class="img-responsive center-block">
-        <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-        <a href="#">Подробнее <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-12">
-      <div class="profile-recommend-item">
-        <img src="images/audio_session_3.png" alt="img" class="img-responsive center-block">
-        <h6>Терапевтический Аудио сеанс избавления от навязчивых мыслей</h6>
-        <a href="#">Подробнее <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Footers -->
-
-<footer class="top-footer hidden-sm hidden-xs">
-  <div class="container">
-   <div class="top-footer-container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="top-footer-item">
-          <h6>Услуги</h6>
-          <ul>
-            <li><a href="#">Индивидуальная консультация</a></li>
-            <li><a href="#">Групповая консультация</a></li>
-            <li><a href="#">Терапевтические Аудио сеансы</a></li>
-            <li><a href="#">Терапевтические видео курсы</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="top-footer-item">
-          <h6>Вопросы к психотерапевту</h6>
-          <ul>
-            <li><a href="#">Выпуски передачи</a></li>
-            <li><a href="#">Написать письмо в передачу</a></li>
-            <li><a href="#">Отзывы и предложения</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="top-footer-item">
-          <h6>Полезно знать</h6>
-          <ul>
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Полезные советы</a></li>
-            <li><a href="#">Полезные заметки</a></li>
-            <li><a href="#">Техники и упражнения</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="top-footer-item">
-          <h6>Неврозы 21 века</h6>
-          <ul>
-            <li><a href="#">Выпуски проекта</a></li>
-            <li><a href="#">Предлагаем тематику вебинара</a></li>
-            <li><a href="#">Голосуем за тему вебинара</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="bottom-footer"></div>
-  </div>
-</div>
-</footer>
-
-<footer class="bottom-footer">
-  <div class="container">
-    <div class="bg-container clearfix">
-      <div class="row">
-        <div class="col-sm-6 col-xs-12">
-          <div class="bottom-footer-left">
-            <a href="#"><img src="images/logo.jpg" alt="logo"></a>
-            <p>&#169; BeznervozaNet | Все права защищены</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-xs-12">
-          <div class="bottom-footer-right">
-            <div class="footer-socials">
-              <a href="#"><i class="icon icon-google"></i></a>
-              <a href="https://vk.com/bez_nevroza_net" target="_blank"><i class="icon icon-vk"></i></a>
-              <a href="#"><i class="icon icon-tw"></i></a>
-              <a href="#"><i class="icon icon-ok"></i></a>
-            </div>
-            <p>Мы в социальных сетях</p>
-          </div>
-        </div>
-        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-          <div class="copyright">
-            <p>&#169; BeznervozaNet | Все права защищены</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Scroll Top -->
-<div class="scroll-top">
-  <i class="icon icon-up"></i>
-</div>
-
-<!-- Popup Registration -->
-<div id="registration-popup" class="registration-popup mfp-hide">  <!--mfp-hide-->
-  <form id="registration-form" class="registration-form">
-    <h3>Регистрация</h3>
-    <input type="text" placeholder="Ваше имя" required>
-    <input type="text" placeholder="Ваша фамилия">
-    <h5>Дата рождения</h5>
-    <h5>Телефон</h5>
-    <input type="tel" placeholder="+7">
-    <button>Получить код</button>
-    <input type="text" placeholder="Ведите код активации" required>
-    <input type="password">
-    <button>Зарегистрироваться</button>
-  </form>
-</div>
-
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='https://www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
-
-<!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/slick-carousel/slick/slick.js"></script>
-<script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-
-<!-- build:js scripts/plugins.js -->
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script> -->
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script> -->
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script> -->
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script> -->
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script> -->
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script> -->
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script> -->
-<!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script> -->
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-<!-- endbuild -->
-
-<!-- build:js scripts/main.js -->
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
-</body>
-</html>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

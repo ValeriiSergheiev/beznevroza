@@ -688,6 +688,11 @@ footer {
 		&:first-child {
 			margin-bottom: 10px;
 			border-radius: 5px;
+			a {
+				background-color: $accent-red;
+				font-weight: 700;
+				color: #fff;
+			}
 		}
 		&:nth-child(2) {
 			border-top-left-radius: 5px;
@@ -713,10 +718,10 @@ footer {
 }
 
 .profile-sidenav-active {
-	@include btn-behavior($accent-red);
+	@include btn-behavior($accent-green);
 	//border-radius: 5px;
 	color: #fff !important;
-	font-weight: 700;
+	//font-weight: 700;
 	span {
 		color: #fff !important;
 	}
@@ -852,4 +857,9 @@ footer {
 			opacity: .7;
 		}
 	}
+}
+
+/*My Audio section*/
+.my-audio {
+	margin-top: 35px;
 }

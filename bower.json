@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "slick-carousel": "^1.6.0",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "jPlayer": "jplayer#^2.9.2"
   },
   "overrides": {
     "bootstrap-sass": {
